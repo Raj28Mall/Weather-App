@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>Weather App</title>
+</head>
+
+<body class="flex justify-center bg-gray-700 h-screen">
+    <div class="container rounded-2xl w-2/5 h-[82vh] my-24" style="background: linear-gradient(135deg, #00feba, #5b548a);">
+        <div class="search">
+            <div class="flex justify-center space-x-16 pt-12">
+                <input class="rounded-lg px-3" type="text" placeholder="Enter City Name" id="cityName">
+                <button id="btn" type="submit" class="bg-white rounded-full w-[75px] h-[50px] flex justify-center items-center "><img class="w-[30px] h-auto" src="./pictures/search.png" alt=""></button>
+            </div>
+        </div>
+
+        <div id="bottom" style="display:none">
+            <div class="flex flex-col justify-center items-center text-white">
+                <div class="icon"><img src="./pictures/clear.png" alt=""></div>
+                <div class="temp font-medium text-8xl" id="temp">29°C</div>
+                <div class="city font-medium text-6xl" id="city">Mumbai</div>
+                <br>
+                <div class="extras flex justify-between space-x-44 pt-12">
+                    <div class="humidity">
+                        <img class="h-[85px]" src="./pictures/humidity.png" alt="">
+                        <p class="text-2xl text-center py-3" id="humidity">20%</p>
+                    </div>
+                    <div class="wind">
+                        <img class="h-[85px]" src="./pictures/wind.png" alt="">
+                        <p class="text-2xl text-center py-3" id="wind">5 km/h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore images and other media files
+pictures/
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build output
+dist/
+build/
+
+# Ignore environment variables
+.env
+
+# Ignore package lock files
+package-lock.json
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore compiled files
+*.out
+*.class
+
+# Ignore coverage reports
+coverage/
+
+# Ignore dependency directories
+jspm_packages/
