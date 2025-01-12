@@ -2,9 +2,10 @@ const apiKey='d1095dbc3cf6403da6565612241212';
 const baseUrl='http://api.weatherapi.com/v1';
 
 async function getWeather(city){
+
     const url=`${baseUrl}/current.json?key=${apiKey}&q=${city}&aqi=no`;
+
     let x= await fetch(url);
-    
     if(!x.ok){
         alert("Unfortunately, we dont have data about this place");
     }
@@ -14,7 +15,7 @@ async function getWeather(city){
     }
 }
 
-function updateDOM(){
+function updateDOM(data){
     const bottomDiv=document.getElementById('bottom');
     bottomDiv.style.display="block";
 
